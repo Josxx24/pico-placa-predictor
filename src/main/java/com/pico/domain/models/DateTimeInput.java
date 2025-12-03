@@ -1,4 +1,4 @@
-package domain.models;
+package com.pico.domain.models;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
