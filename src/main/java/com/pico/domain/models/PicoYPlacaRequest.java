@@ -1,4 +1,4 @@
-package domain.models;
+package com.pico.domain.models;
 
 public class PicoYPlacaRequest {
     
