@@ -1,4 +1,4 @@
-package com.pico.placa.rules;
+package com.pico.domain.rules;
 
 
 import org.junit.jupiter.api.Test;
