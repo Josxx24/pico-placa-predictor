@@ -1,4 +1,4 @@
-package com.pico.placa.domain;
+package com.pico.domain.models;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package com.pico.placa.domain;
+package com.pico.domain.models;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -8,6 +8,8 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 import com.pico.domain.models.*;
+
+import com.pico.domain.models.DateTimeInput;
 
 public class DateTimeInputTest {
     @Test

@@ -1,10 +1,12 @@
-package com.pico.placa.domain;
+package com.pico.domain.models;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import com.pico.domain.models.*;
+
+import com.pico.domain.models.Plate;
 
 public class PlateTest {
     
