@@ -210,6 +210,45 @@ mvn clean compile
 java -cp target/classes com.pico.cli.Main
 ```
 
+### Running the GUI (Desktop UI)
+
+This project includes a Swing-based desktop GUI (`com.pico.ui.PicoPlacaGUI`). There are a few convenient ways to run it:
+
+- Quick (one-click) — use the provided Windows batch or PowerShell script (recommended for Windows users):
+
+```powershell
+# From the project root (Windows PowerShell)
+.\run-gui.bat
+# or
+.\run-gui.ps1
+```
+
+The scripts will build the project and then run the GUI. `run-gui.bat` keeps the console open so you can see log output.
+
+- Run the assembled runnable JAR (recommended for distribution):
+
+```powershell
+mvn -DskipTests=true clean package
+java -jar target\pico-placa-predictor-1.0-SNAPSHOT-jar-with-dependencies.jar
+```
+
+This produces a single `jar-with-dependencies` file in `target/` that contains all runtime dependencies and the GUI main class. Double-clicking the JAR launches the GUI (no console shown).
+
+- Development run (fast iterate):
+
+```powershell
+mvn -DskipTests=true clean compile
+java -cp target\classes com.pico.ui.PicoPlacaGUI
+```
+
+- Alternative: run via the exec plugin (works if you prefer Maven):
+
+```powershell
+mvn -Dexec.mainClass=com.pico.ui.PicoPlacaGUI org.codehaus.mojo:exec-maven-plugin:3.1.0:java
+```
+
+If you experience issues running the exec plugin in PowerShell, use the `java -jar` or `java -cp` approaches above — they are the most robust.
+
 ### Interactive Usage Flow
 
 1. Application starts with the Pico y Placa Predictor banner
