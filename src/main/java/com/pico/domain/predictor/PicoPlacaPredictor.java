@@ -32,7 +32,7 @@ public class PicoPlacaPredictor {
         boolean canDrive = canDrive(plate, date, time);
 
         String message = canDrive
-                ? "El vehículo SÍ puede circular."
+                ? "El vehículo SI puede circular."
                 : "El vehículo NO puede circular por Pico y Placa.";
 
         return new PredictionResult(canDrive, message);
